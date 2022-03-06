@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>exam-adaptive</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="site-header">
+                <div class="site-header__logo logo">
+                    <a class="logo__link" href="index.html">
+                        <img class="logo__img" src="./images/site-logo.svg" alt="site-logo">
+                    </a>
+                </div>
+                
+                <div class="site-header__navbar navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">Services</a>
+                        </li>
+                        
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">Portfolio</a>
+                        </li>
+                        
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#">About as</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="navbar__language language">
+                        <ul class="language__list">
+                            <li class="language__item">
+                                <a class="language__link" href="#">Uz</a>
+                            </li>
+                            
+                            <li class="language__item">
+                                <a class="language__link" href="#">Ru</a>
+                            </li>
+                            
+                            <li class="language__item">
+                                <a class="language__link" href="#">En</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="site-header__hamburg-btn" type="button">
+                    &#9776
+               </button>
+                
+                <span class="site-header__span"></span>
+            </div>
+        </div>
+        
+    </header>
+    
+    <section>
+        <div class="container">
+            <div class="hero">
+                <span class="hero__span"></span>
+                <form class="hero__form form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                    <div class="form__div">
+                        <div class="form__box-name">
+                            <label class="form__label">Ism Familiya</label>
+                            <input class="form__input" type="text" name="name" aria-label="Ismingizni kiriting" placeholder="Ismingizni kiriting">
+                        </div>
+                        
+                        <div class="form__box-compania">
+                            <label class="form__label">Companiyani kiriting</label>
+                            <input class="form__input" type="text" name="text" aria-label="Companiya" placeholder="Companiya">
+                        </div>
+                    </div>
+                    
+                    <div class="form__div">
+                        <div class="form__box-username">
+                            <label class="form__label">Telegram username</label>
+                            <input class="form__input" type="text" name="username" aria-label="Telegram username" placeholder="Username">
+                        </div>
+                        
+                        <div class="form__box-phone">
+                            <label class="form__label">Phone number</label>
+                            <input class="form__input" type="tel" name="tel" aria-label="Phone number" value="+998 99">
+                        </div>
+                    </div>
+                    
+                    <div class="form__div">
+                        <div class="form__box-site">
+                            <label class="form__label">Saytni turini tanlang</label>
+                            <select class="form__select" name="site-type" aria-placeholder="Saytni turini tanlang">
+                                <option value="Corparative sayt">Corparative sayt</option>
+                                <option value="Corparative sayt">Promo sayt</option>
+                                <option value="Corparative sayt">Internet do'kon</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form__box-telegram">
+                            <label class="form__label">Sizga bo'glanish usulini tanlang</label>
+                            <select class="form__select" name="site-type" aria-placeholder="Saytni turini tanlang">
+                                <option value="Telegram">Telegram</option>
+                                <option value="Telegram">Instagram</option>
+                                <option value="Telegram">WhatsApp</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form__feedback">
+                        <label class="form__label">Message</label>
+                        <textarea class="form__textarea" name="feedback" placeholder="Taklif, Fikr va Mulohazalaringizni yozing..." rows="7"></textarea>
+                    </div>
+
+                    <button class="form__btn" type="button">
+                        Jo'natish
+                    </button>
+                </form>
+
+
+                <div class="hero__info">
+                    <h1 class="hero__info-title">
+                        Ux & Ui design
+                    </h1>
+
+                    <div class="hero__info-box">
+                        <p class="hero__info-text">
+                            In the current tech scenario, one can't predict what device their user will use to interact with a product. This is why it's always a good idea to build something that supports all devices. However it is nearly impossible to design for every screen size with so many .
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+    
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

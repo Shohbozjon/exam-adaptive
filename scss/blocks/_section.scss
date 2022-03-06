@@ -1,0 +1,213 @@
+section{
+    height: 1100px;
+}
+
+.hero{
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.hero__span{
+    position: absolute;
+    z-index: 2;
+    width: 0px;
+    height: 935px;
+    top: -250px;
+    left: 741px;
+    border: 1px solid #FFFFFF;
+}
+
+.form{
+    width: 711px;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.form__div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__box-name , .form__box-telegram{
+    width: 393px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__box-compania , .form__box-site{
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__box-username , .form__box-phone{
+    width: 338px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.form__input{
+    background-color: #333334;
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    padding: 14px 25px;
+    border-radius: 25px;
+    
+}
+
+.form__select{
+    background-color: #333334;
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 14px 25px;
+    border-radius: 25px;
+}
+
+.form__feedback{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__textarea{
+    border-radius: 25px;
+    padding: 16px;
+    background-color: #333334;
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__info-title{
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.hero__info-box{
+    width: 440px;
+    margin: 0;
+    padding: 0;
+}
+
+.hero__info-text{
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+    opacity: 0.6;
+}
+
+.form__btn{
+    position: relative;
+    z-index: 1;
+    width: 127px;
+    padding: 10px 35px 10px 15px;
+    background-color: #0040DD;
+    color: #fff;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    &::after{
+        position: absolute;
+        z-index: 2;
+        content: "";
+        background-image: url(/../images/vector.svg);
+        width: 19.4px;
+        height: 19.4px;
+        top: 12px;
+        left: 90px;
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width:426px){
+
+    .container{
+        width: 100%;
+        max-width: 426px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+
+    .hero{
+        max-width: 426px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero__span{
+        display: none;
+    }
+    
+    .hero__info-box{
+        width: 340px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .form{
+        width: 0;
+    }
+
+    .form , .form__div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__box-name , .form__box-compania , .form__box-site , .form__box-phone , .form__box-telegram , .form__box-username , .form__btn{
+        width: 343px;
+    }
+
+    .form__box-site{
+        margin-bottom: 30px;
+    }
+
+    .form__feedback{
+        display: none;
+    }
+
+    .form__btn{
+        margin-top: 20px;
+        padding: 10px 248px 10px 15px;
+
+        &::after{
+            top: 12px;
+            left: 300px;
+        }
+    }
+   
+}
